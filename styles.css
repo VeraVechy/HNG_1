@@ -135,16 +135,7 @@ footer .links a:hover {
   header,
   main,
   footer {
-    width: 80%;
-  }
-
-  footer .links {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  footer .links a {
-    margin: 0 10px;
+    width: 70%;
   }
 }
 
@@ -153,5 +144,11 @@ footer .links a:hover {
   main,
   footer {
     width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-container {
+    width: 100%;
   }
 }
