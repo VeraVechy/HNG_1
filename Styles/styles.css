@@ -1,0 +1,157 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #4b0082;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+header h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #ffeb3b;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+main {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+main .about-me,
+main .contact-info,
+main .goals {
+  margin-bottom: 20px;
+}
+
+main .about-me h2,
+main .goals h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+main .goals ul {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main .goals ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+main .goals ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffeb3b;
+}
+
+.contact-info a {
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+footer .current-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+footer .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .links a {
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+footer .links a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  header,
+  main,
+  footer {
+    width: 80%;
+  }
+
+  footer .links {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  footer .links a {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 900px) {
+  header,
+  main,
+  footer {
+    width: 60%;
+  }
+}
